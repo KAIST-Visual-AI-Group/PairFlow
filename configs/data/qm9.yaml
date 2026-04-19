@@ -1,0 +1,11 @@
+# TODO: When using this dataset, set model.length = 256 to match D3PM setup
+train: qm9
+valid: qm9
+name: qm9
+dataset_path: data/preprocessed/qm9/parsed/base
+tokenizer_name_or_path: yairschiff/qm9-tokenizer
+cache_dir: data/qm9
+wrap: False
+streaming: False
+insert_train_eos: True
+insert_valid_eos: True

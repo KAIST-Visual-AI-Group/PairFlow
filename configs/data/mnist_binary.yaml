@@ -1,0 +1,15 @@
+# TODO: When using this dataset, set model.length = 256 to match D3PM setup
+train: mnist_binary
+valid: mnist_binary
+name: mnist_binary
+dataset_path: data/preprocessed/mnist-binary/parsed/base
+tokenizer_name_or_path: binary_pixels
+cache_dir: data/mnist_binary
+wrap: False
+streaming: False
+size: 784
+length: 784
+add_special_tokens: False
+add_mask_token: False
+insert_train_eos: True
+insert_valid_eos: True

@@ -1,0 +1,11 @@
+# TODO: When using this dataset, set model.length = 256 to match D3PM setup
+train: zinc250k
+valid: zinc250k
+name: zinc250k
+dataset_path: data/preprocessed/zinc-250k/parsed/base
+tokenizer_name_or_path: yairschiff/zinc250k-tokenizer
+cache_dir: data/zinc250k
+wrap: False
+streaming: False
+insert_train_eos: True
+insert_valid_eos: True

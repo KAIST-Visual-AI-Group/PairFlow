@@ -1,0 +1,45 @@
+# Hydra runtime outputs (contains wandb logs, email, absolute paths)
+outputs/
+
+# Large artifacts (not uploaded; keep preprocessing code)
+checkpoints/
+data/preprocessed/**/dataset/
+data/preprocessed/**/parsed/
+data/redi/
+evaluation/
+fid_features/
+integral/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Claude Code local settings
+.claude/
+
+# Slurm / wandb runtime logs
+watch_folder/
+wandb/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

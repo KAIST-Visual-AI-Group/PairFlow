@@ -124,6 +124,18 @@ bash scripts/redi/<DATASET>/<MODEL>.sh
 <a name="sampling"></a>
 We also provide evaluation scripts for each dataset. These scripts automatically generate samples and compute the metrics.
 
+### FID Reference Stats (image datasets only)
+For image datasets (`cifar-10`, `mnist-binary`), FID is computed against a reference statistics file loaded from `./fid_features/<DATASET>.npz`. This file is **not included in the repository** — you must generate it yourself from the real training images before running evaluation. We use [`pytorch_image_generation_metrics`](https://github.com/w86763777/pytorch-image-generation-metrics) for the computation; please follow its documentation to precompute the Inception statistics and save them to:
+
+| Dataset | Reference stats path |
+|---|---|
+| `cifar-10` | `fid_features/cifar-10.npz` |
+| `mnist-binary` | `fid_features/mnist-binary.npz` |
+
+QM9 and ZINC-250k use SMILES-based molecular metrics (validity / uniqueness / novelty) and do not require this file.
+
+### Running Evaluation
+
 ```bash
 bash scripts/eval/<DATASET>/<MODEL>.sh \
   --SAMPLING_STEPS=<SAMPLING_STEPS> --TOTAL_SAMPLES=<TOTAL_SAMPLES> \

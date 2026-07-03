@@ -1,7 +1,7 @@
 <div align="center">
 <h2>PairFlow: Closed-Form Source-Target Coupling for Few-Step Generation in Discrete Flow Models</h2>
 
-[Mingue Park*](https://uygnim99.github.io/) · [Jisung Hwang*]() · [Seungwoo Yoo*](https://dvelopery0115.github.io/) · [Kyeongmin Yeo](https://32v.github.io/) · [Minhyuk Sung](https://mhsung.github.io/)
+[Mingue Park*](https://uygnim99.github.io/) · [Jisung Hwang*](https://jisung0111.github.io/) · [Seungwoo Yoo*](https://dvelopery0115.github.io/) · [Kyeongmin Yeo](https://32v.github.io/) · [Minhyuk Sung](https://mhsung.github.io/)
 
 (* Equal Contribution)
 
